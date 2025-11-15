@@ -1,0 +1,122 @@
+/* ===== SETTINGS PANEL ===== */
+#settings {
+  position: relative;
+  z-index: 2;
+  width: 400px;
+  height: 100%;
+  transform: translateX(-88%);
+  background-color: rgba(43, 43, 43, 0.3);
+  backdrop-filter: blur(5px);
+  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.42s ease, background-color 0.4s ease;
+}
+#settings:hover {
+  transform: translateX(0);
+  background-color: rgba(252, 252, 252, 0.2);
+}
+#settings .content {
+  width: 90%;
+}
+#settings .header {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#settings .types {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#settings .types span::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.38s ease;
+}
+#settings .types span.selected::after {
+  width: 100%;
+}
+#settings .types span:not(span.selected):hover::after {
+  width: 25%;
+}
+#settings .ship-colors,
+#settings .backgrounds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+#settings .ship-colors img:first-child,
+#settings .ship-colors img:last-child,
+#settings .backgrounds img:first-child,
+#settings .backgrounds img:last-child {
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  padding: 6px;
+  border-radius: 50%;
+}
+#settings .ship-colors img:nth-child(2),
+#settings .backgrounds img:nth-child(2) {
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.55));
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+#settings .content > div {
+  padding: 40px 0;
+}
+#settings .bottom img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+#settings .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px 7px;
+}
+#githubIcon {
+  transition: filter 0.1s ease;
+}
+#githubIcon:hover {
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.6));
+}
+#settingsIcon {
+  transition: transform 1s ease;
+}
+#settings:hover #settingsIcon {
+  transform: rotate(88deg);
+}
+
+/* ===== HOME PANEL ===== */
+#home {
+  width: max-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 70px;
+}
+#playButton {
+  border-radius: 100px;
+  padding: 10px 50px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  font-size: 1.1em;
+}
+#playButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

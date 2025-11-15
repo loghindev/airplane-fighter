@@ -1,0 +1,17 @@
+@font-face {
+  font-family: kenvector;
+  src: url("/assets/fonts/kenvector_future.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: kenvector;
+}
+
+body {
+  height: 100vh;
+  color: white;
+}

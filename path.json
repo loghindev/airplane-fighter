@@ -1,0 +1,28 @@
+{
+  "ships": [
+    [
+      "/assets/ships/playerShip1_blue.png",
+      "/assets/ships/playerShip1_green.png",
+      "/assets/ships/playerShip1_orange.png",
+      "/assets/ships/playerShip1_red.png"
+    ],
+    [
+      "/assets/ships/playerShip2_blue.png",
+      "/assets/ships/playerShip2_green.png",
+      "/assets/ships/playerShip2_orange.png",
+      "/assets/ships/playerShip2_red.png"
+    ],
+    [
+      "/assets/ships/playerShip3_blue.png",
+      "/assets/ships/playerShip3_green.png",
+      "/assets/ships/playerShip3_orange.png",
+      "/assets/ships/playerShip3_red.png"
+    ]
+  ],
+  "backgrounds": [
+    "/assets/backgrounds/purple.png",
+    "/assets/backgrounds/darkPurple.png",
+    "/assets/backgrounds/blue.png",
+    "/assets/backgrounds/black.png"
+  ]
+}
