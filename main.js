@@ -3,6 +3,8 @@ import loadBackground from "./js/localStorage/loadBackground.js";
 import selectBackground from "./js/settings/selectBackground.js";
 import selectShip from "./js/settings/selectShip.js";
 import loadShip from "./js/localStorage/loadShip.js";
+import resetDefaultPreset from "./js/utils/resetDefaultPreset.js";
+import handleStartGame from "./js/utils/handleStartGame.js";
 
 const path = await fetchPath();
 export const ships = path.ships;
@@ -14,6 +16,12 @@ export const backgrounds = path.backgrounds;
 loadShip();
 loadBackground();
 
-// select assets from settings tab
+// handle select assets from settings tab
 selectShip();
 selectBackground();
+
+// handle restore default preset in settings tab
+resetDefaultPreset();
+
+// handle start game
+handleStartGame();

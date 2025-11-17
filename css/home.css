@@ -82,6 +82,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 4px 7px;
 }
 #githubIcon {
@@ -119,4 +120,32 @@
 }
 #playButton:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== UTILITY CLASSES & ANIMATIONS ===== */
+.hide-home {
+  animation: hide-home-anim 0.6s ease forwards;
+}
+
+.hide-settings {
+  animation: hide-settings-anim 0.4s ease forwards;
+}
+
+@keyframes hide-home-anim {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+@keyframes hide-settings-anim {
+  from {
+    transform: translateX(-88%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
