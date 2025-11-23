@@ -1,0 +1,74 @@
+/* ===== LOADER ===== */
+#loader {
+  padding: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+#loader .bar {
+  border: 1px solid white;
+  width: 100%;
+  height: 10px;
+}
+
+#loader .bar .fill {
+  background-color: white;
+  width: 0;
+  height: 100%;
+  transition: width 0.25s ease;
+}
+
+.show-loading-bar {
+  animation: reveal-loader 0.8s ease forwards;
+}
+
+.hide-loading-bar {
+  animation: hide-loader 1s ease forwards;
+}
+
+@keyframes reveal-loader {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes hide-loader {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
+/* ===== SHIP ===== */
+
+#ship {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 250%);
+}
+
+.reveal-ship {
+  animation: slide-ship-up 0.8s ease forwards;
+}
+
+@keyframes slide-ship-up {
+  from {
+    transform: translate(-50%, 250%);
+  }
+
+  to {
+    transform: translate(-50%, -60px);
+  }
+}

@@ -10,7 +10,7 @@ function handleStartGame() {
   playButton.addEventListener("click", () => {
     hideHomeComponents();
     setTimeout(() => {
-      window.location.href = "/game.html";
+      window.location.href = "/pages/game.html";
     }, 800);
   });
 }

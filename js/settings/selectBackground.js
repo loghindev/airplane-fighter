@@ -1,6 +1,6 @@
 import { backgrounds } from "../../main.js";
 
-export const bgPreview = document.querySelector("#settings .backgrounds img:nth-child(2)");
+const bgPreview = document.querySelector("#settings .backgrounds img:nth-child(2)");
 
 function selectBackground() {
   const prevBtn = document.querySelector("#settings .backgrounds img:first-child");

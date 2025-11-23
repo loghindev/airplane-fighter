@@ -1,8 +1,9 @@
-import { bgPreview } from "../settings/selectBackground.js";
-
 function loadBackground() {
   const source = localStorage.getItem("bg") || "/assets/backgrounds/purple.png";
-  bgPreview.src = source;
+  const bgPreview = document.querySelector("#settings .backgrounds img:nth-child(2)");
+  if (bgPreview) {
+    bgPreview.src = source;
+  }
   document.body.style.backgroundImage = `url(${source})`;
 }
 
