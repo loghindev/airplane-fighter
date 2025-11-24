@@ -57,6 +57,7 @@
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 250%);
+  z-index: 10;
 }
 
 .reveal-ship {
@@ -69,6 +70,15 @@
   }
 
   to {
-    transform: translate(-50%, -60px);
+    transform: translate(-50%, -50%);
   }
+}
+
+/* ===== BULLET ===== */
+.bullet {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 10px;
+  border: 1px solid white;
 }

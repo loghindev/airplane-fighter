@@ -6,6 +6,7 @@ let colorIndex = localStorage.getItem("colorIndex") || 0;
 
 function updatePreviews() {
   const source = ships[shipType][colorIndex];
+  localStorage.setItem("ship", source);
   shipPreview.src = source;
   homeShip.src = source;
 }

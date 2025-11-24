@@ -5,11 +5,13 @@ import selectShip from "./js/settings/selectShip.js";
 import loadShip from "./js/localStorage/loadShip.js";
 import resetDefaultPreset from "./js/utils/resetDefaultPreset.js";
 import handleStartGame from "./js/utils/handleStartGame.js";
+import disableDraggables from "./js/utils/disableDraggables.js";
 
 const path = await fetchPath();
 export const ships = path.ships;
 export const backgrounds = path.backgrounds;
 
+disableDraggables();
 // load assets from localStorage (if exists)
 // localStorage.clear();
 
