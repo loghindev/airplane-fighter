@@ -15,4 +15,5 @@ body {
   height: 100vh;
   color: white;
   overflow: hidden;
+  transition: background-image 0.2s ease, background-position 0.6s ease;
 }

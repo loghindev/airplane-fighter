@@ -1,3 +1,5 @@
+import spawnMeteros from "./spawnMeteors.js";
+
 function createBullet(x, y) {
   const bulletsContainer = document.querySelector(".bullets-container");
   const newBullet = document.createElement("div");
@@ -9,7 +11,7 @@ function createBullet(x, y) {
 }
 
 function moveProjectile(bullet, y) {
-  y -= 9;
+  y -= 9; // bullet speed
   bullet.style.top = y + "px";
   if (y > -80) {
     requestAnimationFrame(() => {
@@ -25,6 +27,8 @@ function controlShip() {
   ship.addEventListener(
     "mouseover",
     () => {
+      // hide cursor
+      document.body.style.cursor = "none";
       // handle ship movement (mouse)
       document.addEventListener("mousemove", (event) => {
         ship.style.left = event.clientX + "px";
@@ -33,9 +37,11 @@ function controlShip() {
       // handle ship bullets
       document.addEventListener("click", (event) => {
         const bullet = createBullet(event.clientX, event.clientY);
-        const y = getComputedStyle(bullet).top.split("p")[0];
+        const y = window.getComputedStyle(bullet).top.split("p")[0];
         moveProjectile(bullet, y);
       });
+      // begin spawning meteors
+      setTimeout(spawnMeteros, Math.random() * 1000 + 2000);
     },
     { once: true }
   );

@@ -1,5 +1,3 @@
-import revealShip from "../gameplay/revealShip.js";
-
 function startLoading() {
   return new Promise((resolve) => {
     const value = document.querySelector("#loader .value");
