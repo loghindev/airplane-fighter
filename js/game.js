@@ -1,4 +1,5 @@
 import controlShip from "./gameplay/controlShip.js";
+import revealHUD from "./gameplay/revealHUD.js";
 import revealShip from "./gameplay/revealShip.js";
 import loadBackground from "./localStorage/loadBackground.js";
 import disableDraggables from "./utils/disableDraggables.js";
@@ -12,8 +13,8 @@ disableDraggables();
 // start moving background animation
 moveBackground();
 
-// handle loader (async)
-await loader();
-// localStorage.clear();
+// load game (async)
+// await loader();
+revealHUD();
 revealShip();
 controlShip();
