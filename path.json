@@ -24,5 +24,27 @@
     "/assets/backgrounds/darkPurple.png",
     "/assets/backgrounds/blue.png",
     "/assets/backgrounds/black.png"
+  ],
+  "meteors": [
+    "/assets/meteors/meteorBrown_big1.png",
+    "/assets/meteors/meteorBrown_big2.png",
+    "/assets/meteors/meteorBrown_big3.png",
+    "/assets/meteors/meteorBrown_big4.png",
+    "/assets/meteors/meteorBrown_med1.png",
+    "/assets/meteors/meteorBrown_med3.png",
+    "/assets/meteors/meteorBrown_small1.png",
+    "/assets/meteors/meteorBrown_small2.png",
+    "/assets/meteors/meteorBrown_tiny1.png",
+    "/assets/meteors/meteorBrown_tiny2.png",
+    "/assets/meteors/meteorGrey_big1.png",
+    "/assets/meteors/meteorGrey_big2.png",
+    "/assets/meteors/meteorGrey_big3.png",
+    "/assets/meteors/meteorGrey_big4.png",
+    "/assets/meteors/meteorGrey_med1.png",
+    "/assets/meteors/meteorGrey_med2.png",
+    "/assets/meteors/meteorGrey_small1.png",
+    "/assets/meteors/meteorGrey_small2.png",
+    "/assets/meteors/meteorGrey_tiny1.png",
+    "/assets/meteors/meteorGrey_tiny2.png"
   ]
 }
